@@ -1,8 +1,9 @@
 import subprocess
 
-PCL_VERSION = "1.9"
+PCL_VERSION = "1.12"
 
 libs_to_build = [
+    '2d',
     'common',
     'features',
     'filters',
