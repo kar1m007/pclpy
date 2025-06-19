@@ -21,7 +21,7 @@ libs_to_build = [
     'tracking',
     # 'visualization',
 ]
-pcl_libraries = ["pcl_%s_%s" % (lib, PCL_VERSION) for lib in libs_to_build]
+pcl_libraries = ["pcl_%s-%s" % (lib, PCL_VERSION) for lib in libs_to_build]
 
 
 def pkg_config_multi(arg, skip_chars=0):
