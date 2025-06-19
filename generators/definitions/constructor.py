@@ -2,8 +2,8 @@ import re
 
 from CppHeaderParser import CppMethod
 
-from generator.config import INHERITED_ENUMS, CUSTOM_OVERLOAD_TYPES
-from generator.utils import clean_doxygen
+from generators.config import INHERITED_ENUMS, CUSTOM_OVERLOAD_TYPES
+from generators.utils import clean_doxygen
 
 
 class Constructor:

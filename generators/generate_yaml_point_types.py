@@ -6,9 +6,12 @@ from typing import List, Tuple
 
 import yaml
 
-from generator.config import MODULES_TO_BUILD
-from generator.point_types_utils import PCL_POINT_TYPES, PCL_ALL_POINT_TYPES
-from generator.utils import parentheses_are_balanced
+import sys
+sys.path.append("../generators")
+
+from generators.config import MODULES_TO_BUILD
+from generators.point_types_utils import PCL_POINT_TYPES, PCL_ALL_POINT_TYPES
+from generators.utils import parentheses_are_balanced
 
 PCL_REPO_PATH = os.environ["PCL_REPO_PATH"]
 POINT_GROUPS = PCL_POINT_TYPES

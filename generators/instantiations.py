@@ -5,11 +5,11 @@ from typing import List, Dict
 from CppHeaderParser import CppClass, CppVariable
 from inflection import camelize
 
-from generator.config import INDENT, KEEP_ASIS_TYPES, BASE_SUB_MODULE_NAME
-from generator.definitions.enum import Enum
-from generator.definitions.method import filter_template_types
-from generator.definitions.module_variable import define_variable
-from generator.utils import function_definition_name
+from generators.config import INDENT, KEEP_ASIS_TYPES, BASE_SUB_MODULE_NAME
+from generators.definitions.enum import Enum
+from generators.definitions.method import filter_template_types
+from generators.definitions.module_variable import define_variable
+from generators.utils import function_definition_name
 
 
 class Instantiations:

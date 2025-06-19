@@ -1,6 +1,6 @@
 from CppHeaderParser import CppVariable
 
-from generator.config import BASE_SUB_MODULE_NAME
+from generators.config import BASE_SUB_MODULE_NAME
 
 
 def define_variable(var: CppVariable):

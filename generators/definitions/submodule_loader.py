@@ -1,7 +1,7 @@
 from inflection import camelize
 
-from generator.config import common_includes, INDENT, cpp_header
-from generator.utils import function_definition_name
+from generators.config import common_includes, INDENT, cpp_header
+from generators.utils import function_definition_name
 
 
 def generate_loader(module, headers):

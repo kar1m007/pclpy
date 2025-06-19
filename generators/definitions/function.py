@@ -5,11 +5,11 @@ from typing import List
 from CppHeaderParser import CppMethod
 from inflection import camelize
 
-from generator.config import INDENT, FUNCTIONS_TO_SKIP
-from generator.definitions.method import Method
-from generator.definitions.method import filter_template_types, template_types_generator
-from generator.point_types_utils import filter_types
-from generator.utils import function_definition_name
+from generators.config import INDENT, FUNCTIONS_TO_SKIP
+from generators.definitions.method import Method
+from generators.definitions.method import filter_template_types, template_types_generator
+from generators.point_types_utils import filter_types
+from generators.utils import function_definition_name
 
 
 def filter_functions(cppfunctions, header_name):

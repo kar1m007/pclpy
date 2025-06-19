@@ -10,17 +10,17 @@ from typing import List, Dict, Set
 from CppHeaderParser import CppHeaderParser
 from CppHeaderParser.CppHeaderParser import CppMethod
 
-import generator.dependency_tree
-from generator.config import common_includes, PCL_BASE, PATH_LOADER, PATH_MODULES, MODULES_TO_BUILD, \
+import generators.dependency_tree
+from generators.config import common_includes, PCL_BASE, PATH_LOADER, PATH_MODULES, MODULES_TO_BUILD, \
     HEADERS_TO_SKIP, ATTRIBUTES_TO_SKIP, CLASSES_TO_IGNORE, METHODS_TO_SKIP, SUBMODULES_TO_SKIP, EXPLICIT_INCLUDES, \
     SPECIALIZED_TEMPLATED_TYPES_TO_SKIP
-from generator.definitions.function import generate_function_definitions, get_methods_defined_outside
-from generator.definitions.method import split_methods_by_type
-from generator.definitions.submodule_loader import generate_loader
-from generator.definitions.templated_class import ClassDefinition
-from generator.instantiations import Instantiations
-from generator.point_types_utils import unpack_yaml_point_types
-from generator.utils import make_header_include_name, sort_headers_by_dependencies, \
+from generators.definitions.function import generate_function_definitions, get_methods_defined_outside
+from generators.definitions.method import split_methods_by_type
+from generators.definitions.submodule_loader import generate_loader
+from generators.definitions.templated_class import ClassDefinition
+from generators.instantiations import Instantiations
+from generators.point_types_utils import unpack_yaml_point_types
+from generators.utils import make_header_include_name, sort_headers_by_dependencies, \
     generate_main_loader, make_namespace_class, read_header_file
 
 
@@ -404,7 +404,7 @@ def generate(headers_to_generate, skip_macros, not_every_point_type=False) -> Or
     classes = [c for module, header, path in headers_to_generate
                for c in main_classes[(module, header)]]
 
-    dependency_tree = generator.dependency_tree.DependencyTree(classes)
+    dependency_tree = generators.dependency_tree.DependencyTree(classes)
 
     loaded_point_types = load_yaml_point_types(not_every_point_type)
     classes_point_types: OrderedDict = dependency_tree.get_point_types_with_dependencies(loaded_point_types)

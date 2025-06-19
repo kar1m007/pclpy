@@ -4,14 +4,14 @@ from typing import List
 from CppHeaderParser import CppClass
 from inflection import camelize
 
-from generator.config import INDENT, DONT_HOLD_WITH_BOOST_SHARED_PTR, EXTRA_FUNCTIONS, GLOBAL_PCL_IMPORTS
-from generator.definitions.constructor import Constructor
-from generator.definitions.enum import Enum
-from generator.definitions.method import Method
-from generator.definitions.method import filter_template_types
-from generator.definitions.variable import Variable
-from generator.point_types_utils import clean_inheritance
-from generator.utils import clean_doxygen
+from generators.config import INDENT, DONT_HOLD_WITH_BOOST_SHARED_PTR, EXTRA_FUNCTIONS, GLOBAL_PCL_IMPORTS
+from generators.definitions.constructor import Constructor
+from generators.definitions.enum import Enum
+from generators.definitions.method import Method
+from generators.definitions.method import filter_template_types
+from generators.definitions.variable import Variable
+from generators.point_types_utils import clean_inheritance
+from generators.utils import clean_doxygen
 
 
 class ClassDefinition:

@@ -4,8 +4,8 @@ from typing import List, Tuple, Dict
 
 import yaml
 
-from generator.config import EXTERNAL_INHERITANCE, SKIPPED_INHERITANCE, GLOBAL_PCL_IMPORTS, KEEP_ASIS_TYPES
-from generator.utils import parentheses_are_balanced, make_namespace_class
+from generators.config import EXTERNAL_INHERITANCE, SKIPPED_INHERITANCE, GLOBAL_PCL_IMPORTS, KEEP_ASIS_TYPES
+from generators.utils import parentheses_are_balanced, make_namespace_class
 
 PCL_ALL_POINT_TYPES = {
     "PCL_POINT_TYPES": [

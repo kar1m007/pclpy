@@ -3,9 +3,9 @@ from typing import List, Dict, Generator
 
 from CppHeaderParser import CppClass
 
-from generator.config import EXTERNAL_INHERITANCE, IGNORE_INHERITED_INSTANTIATIONS, INHERITED_TEMPLATED_TYPES_FILTER
-from generator.point_types_utils import clean_inheritance, get_class_namespace
-from generator.utils import make_namespace_class
+from generators.config import EXTERNAL_INHERITANCE, IGNORE_INHERITED_INSTANTIATIONS, INHERITED_TEMPLATED_TYPES_FILTER
+from generators.point_types_utils import clean_inheritance, get_class_namespace
+from generators.utils import make_namespace_class
 
 
 class DependencyTree:
