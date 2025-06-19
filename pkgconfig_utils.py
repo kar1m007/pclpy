@@ -1,6 +1,6 @@
 import subprocess
 
-PCL_VERSION = "1.9"
+PCL_VERSION = "1.12"
 
 libs_to_build = [
     '2d',
@@ -21,7 +21,7 @@ libs_to_build = [
     'tracking',
     # 'visualization',
 ]
-pcl_libraries = ["pcl_%s-%s" % (lib, PCL_VERSION) for lib in libs_to_build]
+pcl_libraries = ["pcl_%s" % (lib) for lib in libs_to_build]
 
 
 def pkg_config_multi(arg, skip_chars=0):
