@@ -7,7 +7,7 @@ from typing import List, Tuple
 import yaml
 
 import sys
-sys.path.append("/usr/src/app/pclpy/generators")
+sys.path.append("../generators")
 
 from generators.config import MODULES_TO_BUILD
 from generators.point_types_utils import PCL_POINT_TYPES, PCL_ALL_POINT_TYPES
