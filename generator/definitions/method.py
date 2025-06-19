@@ -5,13 +5,13 @@ from typing import List
 
 from CppHeaderParser import CppMethod, CppVariable
 
-from generators.config import CUSTOM_OVERLOAD_TYPES, EXPLICIT_IMPORTED_TYPES, KEEP_ASIS_TYPES, \
+from generator.config import CUSTOM_OVERLOAD_TYPES, EXPLICIT_IMPORTED_TYPES, KEEP_ASIS_TYPES, \
     EXTERNAL_INHERITANCE, TEMPLATED_METHOD_TYPES, SPECIFIC_TEMPLATED_METHOD_TYPES, GLOBAL_PCL_IMPORTS
-from generators.definitions.constructor import Constructor
-from generators.definitions.method_parameters import make_pybind_argument_list
-from generators.definitions.variable import Variable
-from generators.point_types_utils import PCL_POINT_TYPES
-from generators.utils import make_namespace_class, clean_doxygen
+from generator.definitions.constructor import Constructor
+from generator.definitions.method_parameters import make_pybind_argument_list
+from generator.definitions.variable import Variable
+from generator.point_types_utils import PCL_POINT_TYPES
+from generator.utils import make_namespace_class, clean_doxygen
 
 
 class Method:

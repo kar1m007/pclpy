@@ -1,4 +1,4 @@
-from generators.generate_pybind11_bindings import generate, write_stuff_if_needed, get_headers
+from generator.generate_pybind11_bindings import generate, write_stuff_if_needed, get_headers
 
 
 def ensure_required(headers):

@@ -6,8 +6,8 @@ import re
 from collections import OrderedDict
 from os.path import join
 
-from generators import config
-from generators.config import PCL_BASE, INDENT
+from generator import config
+from generator.config import PCL_BASE, INDENT
 
 
 def get_point_types(header_path):
